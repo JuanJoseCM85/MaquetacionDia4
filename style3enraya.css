@@ -1,0 +1,214 @@
+* {
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #14bdac;
+  display: grid;
+  grid-template-areas:
+    "head head head head head head"
+    "jugador1 jugador1 partidas partidas jugador2 jugador2"
+    "resetT resetT resetT resetP resetP resetP"
+    "juego juego juego juego juego juego"
+    "footer footer footer footer footer footer";
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  grid-area: head;
+  justify-self: center;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(114, 143, 140, 0.472);
+  width: 100%;
+  text-align: center;
+  height: 40px;
+}
+
+.jugador1 {
+  grid-area: jugador1;
+  height: 100px;
+  justify-self: left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.partidas {
+  grid-area: partidas;
+  height: 100px;
+  justify-self: center;
+  margin-top: 50px;
+}
+.jugador2 {
+  grid-area: jugador2;
+  height: 100px;
+  justify-self: right;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.resetTablero {
+  grid-area: resetT;
+  justify-self: right;
+  margin: 50px 50px;
+}
+.resetPartida {
+  grid-area: resetP;
+  justify-self: left;
+  margin: 50px 50px;
+}
+
+.juego {
+  grid-area: juego;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  grid-area: footer;
+  background-color: black;
+  height: 40px;
+}
+.fila1,
+.fila2,
+.fila3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  height: 100px;
+}
+
+.fila1-1,
+.fila1-2,
+.fila1-3,
+.fila2-1,
+.fila2-2,
+.fila2-3,
+.fila3-1,
+.fila3-2,
+.fila3-3 {
+  width: 100px;
+  height: 100px;
+}
+
+.fila1-1 {
+  border-right: 3px solid rgba(114, 143, 140, 0.472);
+  border-bottom: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+.fila1-1 img,
+.fila1-2 img,
+.fila1-3 img,
+.fila2-1 img,
+.fila2-2 img,
+.fila2-3 img,
+.fila3-1 img,
+.fila3-2 img,
+.fila3-3 img {
+  margin-top: 20px;
+  margin-left: 20px;
+  visibility: hidden;
+}
+
+.nombreJ1,
+.nombreJ2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.finalizado {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.npartidas,
+.puntuacion {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.boton {
+  height: 30px;
+  width: 150px;
+  background-color: rgba(114, 143, 140, 0.472);
+  border-radius: 4px;
+}
+
+.boton:hover {
+  background-color: rgba(88, 99, 98, 0.472);
+}
+
+#ficha1-1o,
+#ficha1-2o,
+#ficha1-3o,
+#ficha2-1o,
+#ficha2-2o,
+#ficha2-3o,
+#ficha3-1o,
+#ficha3-2o,
+#ficha3-3o {
+  margin-top: -100px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.fila1-2 {
+  border-right: 3px solid rgba(114, 143, 140, 0.472);
+  border-left: 3px solid rgba(114, 143, 140, 0.472);
+  border-bottom: 3px solid rgba(114, 143, 140, 0.472);
+}
+.fila1-3 {
+  border-bottom: 3px solid rgba(114, 143, 140, 0.472);
+  border-left: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+.fila2-1 {
+  border-right: 3px solid rgba(114, 143, 140, 0.472);
+  border-bottom: 3px solid rgba(114, 143, 140, 0.472);
+  border-top: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+.fila2-3 {
+  border-top: 3px solid rgba(114, 143, 140, 0.472);
+  border-left: 3px solid rgba(114, 143, 140, 0.472);
+  border-bottom: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+.fila3-1 {
+  border-right: 3px solid rgba(114, 143, 140, 0.472);
+  border-top: 3px solid rgba(114, 143, 140, 0.472);
+}
+.fila3-2 {
+  border-top: 3px solid rgba(114, 143, 140, 0.472);
+  border-left: 3px solid rgba(114, 143, 140, 0.472);
+  border-right: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+.fila3-3 {
+  border-top: 3px solid rgba(114, 143, 140, 0.472);
+  border-left: 3px solid rgba(114, 143, 140, 0.472);
+}
+.fila2-2 {
+  border: 3px solid rgba(114, 143, 140, 0.472);
+}
+
+#puntosJ1,
+#puntosJ2,
+.tituloPartidas,
+.ganadas {
+  font-weight: bold;
+  text-align: center;
+}

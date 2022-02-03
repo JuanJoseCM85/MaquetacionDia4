@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style3enraya.css">
+    <script src="./funciones3enraya.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+       <section class="header">
+           <span>TRES EN RAYA</span>
+       </section>
+       <section class="jugador1">
+           <div class="nombreJ1"> Jugador 1</div>
+           <div class="ganadas">Partidas ganadas</div>
+           <div class="puntuacion"><div id="puntosJ1">0</div></div>
+       </section>
+       <section class="partidas">
+            <div class="tituloPartidas">Numero Partidas Jugadas</div>
+            <div id="contadorPartidas" class="npartidas">0</div>
+            <div class="nganadas"><p></p></div>
+            <div id="finalizado" class="finalizado"> Que gane el mejor.</div>
+       </section>
+       <section class="jugador2">
+        <div class="nombreJ2"> Jugador 2</div>
+        <div class="ganadas">Partidas ganadas</div>
+        <div class="puntuacion"><div id="puntosJ2">0</div></div>
+       </section>
+       <section class="resetTablero">
+           <button class="boton" onclick="resetTablero()"> Reset Tablero </button>
+       </section>
+       <section class="resetPartida">
+           <button class="boton" onclick="resetPartida()">Reset Partida</button>
+       </section>
+       <section class="juego">
+           <div class="fila1">
+               <div class="fila1-1" onclick="casillaElegida()">
+                    <img id="ficha1-1x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha1-1o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+               <div class="fila1-2" onclick="casillaElegida()">
+                <img id="ficha1-2x" src="./MaquetacionDia4/images/x.png" alt="">
+                <img id="ficha1-2o" src="./MaquetacionDia4/images/o.png" alt="">
+            </div>
+               <div class="fila1-3" onclick="casillaElegida()">
+                <img id="ficha1-3x" src="./MaquetacionDia4/images/x.png" alt="">
+                <img id="ficha1-3o" src="./MaquetacionDia4/images/o.png" alt="">
+            </div>
+           </div>
+           <div class="fila2">
+                <div class="fila2-1" onclick="casillaElegida()">
+                    <img id="ficha2-1x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha2-1o" src="./MaquetacionDia4/images/o.png" alt="">
+                    
+                </div>
+                <div class="fila2-2" onclick="casillaElegida()">
+                    <img id="ficha2-2x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha2-2o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+                <div class="fila2-3" onclick="casillaElegida()">
+                    <img id="ficha2-3x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha2-3o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+           </div>
+           <div class="fila3">
+                <div class="fila3-1" onclick="casillaElegida()">
+                    <img id="ficha3-1x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha3-1o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+                <div class="fila3-2" onclick="casillaElegida()">
+                    <img id="ficha3-2x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha3-2o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+                <div class="fila3-3" onclick="casillaElegida()">
+                    <img id="ficha3-3x" src="./MaquetacionDia4/images/x.png" alt="">
+                    <img id="ficha3-3o" src="./MaquetacionDia4/images/o.png" alt="">
+                </div>
+           </div>
+       </section>
+       <section class="footer">footer</section>
+    </main>
+    
+</body>
+</html>
